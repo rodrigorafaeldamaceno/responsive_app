@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:responsive_app/breakpoints.dart';
 import 'package:responsive_app/pages/widgets/appbar/mobile_appbar.dart';
 import 'package:responsive_app/pages/widgets/appbar/web_appbar.dart';
+import 'package:responsive_app/pages/widgets/sections/stop_section.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({Key? key}) : super(key: key);
@@ -27,6 +28,19 @@ class _HomePageState extends State<HomePage> {
                 ),
           drawer:
               constraints.maxWidth < mobileBreakpoint ? const Drawer() : null,
+          body: Align(
+            alignment: Alignment.topCenter,
+            child: ConstrainedBox(
+              constraints: const BoxConstraints(
+                maxWidth: 1400,
+              ),
+              child: ListView(
+                children: const [
+                  TopSection(),
+                ],
+              ),
+            ),
+          ),
         );
       },
     );

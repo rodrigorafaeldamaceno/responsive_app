@@ -10,16 +10,17 @@ class CoursesSection extends StatelessWidget {
     return LayoutBuilder(
       builder: (BuildContext context, BoxConstraints constraints) {
         return GridView.builder(
-          itemCount: 50,
+          itemCount: 10,
           shrinkWrap: true,
           physics: const NeverScrollableScrollPhysics(),
           gridDelegate: const SliverGridDelegateWithMaxCrossAxisExtent(
-            maxCrossAxisExtent: 300,
+            maxCrossAxisExtent: 200,
             crossAxisSpacing: 16,
             mainAxisSpacing: 16,
+            childAspectRatio: 1.3,
           ),
           padding: EdgeInsets.symmetric(
-            vertical: 16,
+            // vertical: 16,
             horizontal: constraints.maxWidth >= tabletBreakpoint ? 0 : 16,
           ),
           itemBuilder: (context, index) {

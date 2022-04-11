@@ -33,7 +33,7 @@ class TopSection extends StatelessWidget {
                       child: Column(
                         children: const <Widget>[
                           Text(
-                            'Aprenda flutter trtr rjrhjr rjhjrh',
+                            'Aprenda flutter',
                             style: TextStyle(
                               fontSize: 32,
                               fontWeight: FontWeight.bold,
@@ -76,7 +76,7 @@ class TopSection extends StatelessWidget {
                       child: Column(
                         children: const <Widget>[
                           Text(
-                            'Aprenda flutter trtr rjrhjr rjhjrh',
+                            'Aprenda flutter',
                             style: TextStyle(
                               fontSize: 28,
                               fontWeight: FontWeight.bold,
@@ -110,7 +110,7 @@ class TopSection extends StatelessWidget {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: const <Widget>[
                   Text(
-                    'Aprenda flutter trtr rjrhjr rjhjrh',
+                    'Aprenda flutter',
                     style: TextStyle(
                       fontSize: 28,
                       fontWeight: FontWeight.bold,

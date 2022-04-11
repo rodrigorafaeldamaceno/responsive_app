@@ -96,7 +96,36 @@ class TopSection extends StatelessWidget {
             ),
           );
         }
-        return Container();
+        return Column(
+          children: [
+            AspectRatio(
+              aspectRatio: 3.4,
+              child: Image.network(
+                'https://i0.wp.com/nscreen.com.br/wp-content/uploads/2021/08/Padrao-Hort-BrancoNR.png?fit=4018%2C971&ssl=1',
+              ),
+            ),
+            Padding(
+              padding: const EdgeInsets.all(16),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: const <Widget>[
+                  Text(
+                    'Aprenda flutter trtr rjrhjr rjhjrh',
+                    style: TextStyle(
+                      fontSize: 28,
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
+                  SizedBox(height: 8),
+                  Text(
+                      'Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua'),
+                  SizedBox(height: 8),
+                  CustomSearhField(),
+                ],
+              ),
+            ),
+          ],
+        );
       },
     );
   }

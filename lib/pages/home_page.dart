@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:responsive_app/breakpoints.dart';
 import 'package:responsive_app/pages/widgets/appbar/mobile_appbar.dart';
 import 'package:responsive_app/pages/widgets/appbar/web_appbar.dart';
+import 'package:responsive_app/pages/widgets/sections/advantage_section.dart';
 import 'package:responsive_app/pages/widgets/sections/top_section.dart';
 
 class HomePage extends StatefulWidget {
@@ -37,6 +38,7 @@ class _HomePageState extends State<HomePage> {
               child: ListView(
                 children: const [
                   TopSection(),
+                  AvdantageSection(),
                 ],
               ),
             ),
